@@ -22,7 +22,7 @@ const ExpenseForm = () => {
       enteredTitle: event.data.value,
     }); */
 
-    //this is the correct method to hadle previous state
+    //this is the correct method to handle previous state
     /* setUserInput((prevState) => {
       return { ...prevState, enteredTitle: event.target.title };
     }); */
@@ -37,7 +37,7 @@ const ExpenseForm = () => {
       enteredPrice: event.data.value,
     }); */
 
-    //this is the correct method to hadle previous state
+    //this is the correct method to handle previous state
     /* setUserInput((prevState) => {
       return { ...prevState, enteredPrice: event.target.value };
     }); */
@@ -52,14 +52,27 @@ const ExpenseForm = () => {
       enteredData: event.data.value,
     }); */
 
-    //this is the correct method to hadle previous state
+    //this is the correct method to handle previous state
     /* setUserInput((prevState) => {
       return { ...prevState, enteredData: event.target.data };
     }); */
   };
 
+
+  const submitHandler = (event) => {
+    event.preventDefault();
+
+    const ExpenseData = {
+        title: enteredTitle,
+        amount: enteredPrice,
+        data: new Date(enteredDate)
+    };
+
+    console.log(ExpenseData);
+  }
+
   return (
-    <form>
+    <form onSubmit={submitHandler}>
       <div className="new-expense__controls">
         <div className="new-expense__control">
           <label>Title</label>
