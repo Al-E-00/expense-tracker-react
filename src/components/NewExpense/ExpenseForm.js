@@ -6,6 +6,7 @@ const ExpenseForm = () => {
   const [enteredPrice, setEnteredPrice] = useState("");
   const [enteredDate, setEnteredData] = useState("");
 
+
   /*   const [userInput, setUserInput] = useState({
     enteredTitle: "",
     enteredPrice: "",
