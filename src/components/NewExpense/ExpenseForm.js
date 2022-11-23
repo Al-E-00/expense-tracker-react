@@ -2,18 +2,18 @@ import React, { useState } from "react";
 import "./ExpenseForm.css";
 
 const ExpenseForm = () => {
-  //const [enteredTitle, setEnteredTitle] = useState("");
-  //const [enteredPrice, setEnteredPrice] = useState("");
-  //const [enteredDate, setEnteredData] = useState("");
+  const [enteredTitle, setEnteredTitle] = useState("");
+  const [enteredPrice, setEnteredPrice] = useState("");
+  const [enteredDate, setEnteredData] = useState("");
 
-  const [userInput, setUserInput] = useState({
+  /*   const [userInput, setUserInput] = useState({
     enteredTitle: "",
     enteredPrice: "",
     enteredData: "",
-  });
+  }); */
 
   const titleChangeHandler = (event) => {
-    //setEnteredTitle(event.target.value);
+    setEnteredTitle(event.target.value);
 
     //this method can sometimes lead to errors
     /* setUserInput({
@@ -22,13 +22,13 @@ const ExpenseForm = () => {
     }); */
 
     //this is the correct method to hadle previous state
-    setUserInput((prevState) => {
+    /* setUserInput((prevState) => {
       return { ...prevState, enteredTitle: event.target.title };
-    });
+    }); */
   };
 
   const amountChangeHandler = (event) => {
-    //setEnteredPrice(event.target.value);
+    setEnteredPrice(event.target.value);
 
     //this method can sometimes lead to errors
     /* setUserInput({
@@ -37,13 +37,13 @@ const ExpenseForm = () => {
     }); */
 
     //this is the correct method to hadle previous state
-    setUserInput((prevState) => {
+    /* setUserInput((prevState) => {
       return { ...prevState, enteredPrice: event.target.value };
-    });
+    }); */
   };
 
   const dateChangeHandler = (event) => {
-    //setEnteredData(event.target.value);
+    setEnteredData(event.target.value);
 
     //this method can sometimes lead to errors
     /*  setUserInput({
@@ -52,9 +52,9 @@ const ExpenseForm = () => {
     }); */
 
     //this is the correct method to hadle previous state
-    setUserInput((prevState) => {
+    /* setUserInput((prevState) => {
       return { ...prevState, enteredData: event.target.data };
-    });
+    }); */
   };
 
   return (
