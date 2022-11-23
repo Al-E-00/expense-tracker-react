@@ -1,8 +1,10 @@
+import "./NewExpense.css";
+
 const NewExpense = () => {
   return;
   <div>
     <form></form>
-  </div>
+  </div>;
 };
 
 export default NewExpense;
